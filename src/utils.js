@@ -22,4 +22,9 @@ const dist = (a,b) => {
 	return Math.sqrt(dx*dx + dy*dy);
 }
 
-export {toArray,add_id_label,add_widget,get_variables,get_booleans,get_choices,deg2rad,rad2deg,dist}
+const compute_degree = (nodes,links) => {	
+	each(nodes,n=>{ n.k = links.filter(l=>(l.source.id==n.id || l.target.id==n.id)).length })
+}
+
+
+export {compute_degree,toArray,add_id_label,add_widget,get_variables,get_booleans,get_choices,deg2rad,rad2deg,dist}

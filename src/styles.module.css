@@ -1,3 +1,22 @@
 .node {
+	stroke:black;
+	stroke-width:0.5;
 	
+}
+
+.edge{
+	stroke:gray;
+	opacity:0.7;
+}
+
+.plot {
+	
+}
+
+.xaxis{
+	
+}
+
+.spike{
+	stroke-width:8px;
 }

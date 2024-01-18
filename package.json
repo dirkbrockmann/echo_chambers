@@ -1,13 +1,13 @@
 {
-  "name": "@explorables/explorable_template",
-  "title": "Explorable Title",
-  "subtitle":"Explorable Subtitle",
+  "name": "@explorables/echo_chambers",
+  "title": "Echo Chambers",
+  "subtitle": "A model for opinion dynamics",
   "version": "1.1.0",
   "license": "CC-BY-4.0",
-  "description": "This is a template for making a complexity explorable. The template can be used to create a new complexity explorable. This template implements the Vicsek Model.",
+  "description": "This explorable illustrates a dynamic network that explains the emergence of groups of uniform opinion. Nodes can change their opinion based on their open-mindedness and can rewire their connections to other nodes that are like them.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dirkbrockmann/explorable_template.git"
+    "url": "git+https://github.com/dirkbrockmann/echo_chambers.git"
   },
   "author": "Dirk Brockmann (https://rocs.hu-berlin.de)",
   "main": "./dist/index.js",
@@ -24,7 +24,8 @@
     "visualization"
   ],
   "dependencies": {
-    "d3": "^7.8.5",
+    "d3": "^4.13.0",
+    "d3-scale-chromatic": "^3.0.0",
     "d3-widgets": "^1.2.4",
     "lodash-es": "^4.17.21",
     "tachyons": "^4.12.0"

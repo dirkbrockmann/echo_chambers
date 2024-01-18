@@ -1,5 +1,5 @@
 export default {
-  "title": "Explorable Title",
-  "subtitle":"Explorable Subtitle",
-  "description": "This is a template for making a complexity explorable. The template can be used to create a new complexity explorable. This template implements the Vicsek Model."
+  "title": "Echo Chambers",
+  "subtitle": "A model for opinion dynamics",
+  "description": "This explorable illustrates a dynamic network that explains the emergence of groups of uniform opinion. Nodes can change their opinion based on their open-mindedness and can rewire their connections to other nodes that are like them."
 }
