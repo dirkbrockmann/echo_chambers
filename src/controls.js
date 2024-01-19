@@ -8,7 +8,7 @@ import {range,map,toPairs} from "lodash-es"
 import cfg from "./config.js"
 import parameters from "./parameters.js"
 
-import {toArray,add_id_label,add_widget,get_variables,get_booleans,get_choices} from "./utils.js"
+import {toArray,add_id_label,add_widget,get_variables} from "./utils.js"
 
 
 // defined variables for variables, booleans and choices, extracting the information from parameters.js
@@ -68,7 +68,6 @@ export default (controls,grid)=>{
 	
 	setup.position(grid.position(cfg.widgets.resetbutton_anchor.x,cfg.widgets.resetbutton_anchor.y));
 	
-
 	controls.selectAll(null).data(sliders).enter().append(widgets.widget);
 	controls.selectAll(null).data(buttons).enter().append(widgets.widget);
 

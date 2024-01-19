@@ -42,7 +42,8 @@ const initialize = (display,config) => {
 	.call(d3.drag()
 	.on("start", dragstarted)
 	.on("drag", dragged)
-	.on("end", dragended));	
+	.on("end", dragended)
+	);	
 	
 	simulation = d3.forceSimulation(nodes)
 		.force("charge", d3.forceManyBody().strength(-20))
@@ -66,20 +67,20 @@ const go = (display,config) => {
 const update = (display,config) => { }
 
 
-function dragstarted(d) {
-  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+function dragstarted(event,d) {
+  if (!event.active) simulation.alphaTarget(0.3).restart();
   d.fx = d.x;
   d.fy = d.y;
 }
 
 
-function dragged(d) {
-  d.fx = d3.event.x;
-  d.fy = d3.event.y;
+function dragged(event,d) {
+ d.fx = event.x;
+ d.fy = event.y;
 }
 
-function dragended(d) {
-  if (!d3.event.active) simulation.alphaTarget(0);
+function dragended(event,d) {
+  if (!event.active) simulation.alphaTarget(0);
   d.fx = null;
   d.fy = null;
 }
