@@ -2,7 +2,7 @@
   "name": "@explorables/echo_chambers",
   "title": "Echo Chambers",
   "subtitle": "A model for opinion dynamics",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "CC-BY-4.0",
   "description": "This explorable illustrates a dynamic network that explains the emergence of groups of uniform opinion. Nodes can change their opinion based on their open-mindedness and can rewire their connections to other nodes that are like them.",
   "repository": {
