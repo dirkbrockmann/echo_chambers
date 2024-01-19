@@ -1,5 +1,5 @@
 import * as d3 from "d3"
-import {schemeSet3} from "d3-scale-chromatic"
+import {schemeSet3} from "d3"
 import cfg from "./config.js"
 import param from "./parameters.js"
 import {nodes} from "./model.js"

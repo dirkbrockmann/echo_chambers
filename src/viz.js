@@ -1,5 +1,5 @@
 import * as d3 from "d3"
-import {schemeSet3} from "d3-scale-chromatic"
+import {schemeSet3} from "d3"
 import param from "./parameters.js"
 import {selected_link,nodes,links} from "./model.js"
 import styles from "./styles.module.css"
